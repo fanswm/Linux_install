@@ -8,7 +8,7 @@
 ## 查看是否安装了gtk
 + `pkg-config --list-all | grep gtk`
 
-## test: hello_gtk.c
+## 测试: hello_gtk.c
 ```
 #include<gtk/gtk.h>
 int main(int argc,char *argv[])
@@ -23,5 +23,5 @@ int main(int argc,char *argv[])
 }
 ```
 
-## bianyi:
+## 编译:
 + `gcc hello_gtk.c -o hello_gtk `pkg-config --libs --cflags gtk+-2.0``
