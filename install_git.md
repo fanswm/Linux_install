@@ -1,4 +1,5 @@
-## 直接clone服务器:
+# 直接clone服务器:
+
 + `git clone git@[myip]:/home/git/one.git`
 > input passwd
 + `cd one`
@@ -7,67 +8,68 @@
 + `git pull`
 > input passwd
 
-## 11111111
-C:\users\administrator\.ssh\id_rsa
-git密码: 14a
+# 原始安装
 
-在(home)win10中:
-打开git_shell
-$ ssh-keygen
-	没有留密码.
+## 密钥位置： `C:\users\administrator\.ssh\id_rsa`
 
-在(home)pi中:
-$ su root
-$ cat /home/fanswm/.ssh/id_rsa.pub >> /home/git/.ssh/authorized_keys
-$ cat /mnt/usb/tmp/id_rsa.pub >> /home/git/.ssh/authorized_keys
-$ su git
-$ cd one.git
-$ ssh-keygen
-未留密码.
+## 在(home)win10中:
++ 打开git_shell
++ `ssh-keygen`
 
+## 在(home)pi中:
++ `su root`
++ `cat /home/fanswm/.ssh/id_rsa.pub >> /home/git/.ssh/authorized_keys`
++ `cat /mnt/usb/tmp/id_rsa.pub >> /home/git/.ssh/authorized_keys`
++ `su git`
++ `cd one.git`
++ `ssh-keygen`
 
-$ cd ~
-$ mkdir one.git
-$ chmod 760 one.git
-$ cd one.git
-$ git --bare init
++ `cd ~`
++ `mkdir one.git`
++ `chmod 760 one.git`
++ `cd one.git`
++ `git --bare init`
 
-$ sudo vim /etc/hosts
-	在里面加入下面一行
-	abpage.freedynamicdns.org gitserver
++ `sudo vim /etc/hosts`
+> 在里面加入下面一行
+```
+mydomain.freedynamicdns.org gitserver
+```
 
-在win10中:
-打开git_shell
-$ mkdir onegit
-$ git init
-$ git remote add origin git@abpage.freedynamicdns.org:/home/git/one.git
-$ vim test.txt
-$ git add .
-$ git commit -m"init git"
-$ git fetch origin master
-$ git branch --set-upstream-to=origin/master master
-解释:远程分支  本地分支
-$ gut pull
-$ git push origin master
+## 在win10中:
 
-$ vim /etc/passwd
-git禁用shell(git 禁用shell后,不能远程登录了)
-$ git checkout -b work #新建分支work
-$ git push --set-upstream origin work
-$ git push
-$ git checkout -b work origin/work
-运行 git fetch，可以将远程分支信息获取到本地，再运行 git checkout -b local-branchname origin/remote_branchname  就可以将远程分支映射到本地命名为local-branchname  的一分支。 
-OK!
-at jhk:
-To git@abpage.freedynamicdns.org:/home/git/one.git
++ `mkdir onegit`
++ `git init`
++ `git remote add origin git@abpage.freedynamicdns.org:/home/git/one.git`
++ `vim test.txt`
++ `git add .`
++ `git commit -m"init git"`
++ `git fetch origin master`
++ `git branch --set-upstream-to=origin/master master`
+> 解释:远程分支  本地分支
++ `gut pull`
++ `git push origin master`
+
++ `vim /etc/passwd`
+> git禁用shell(git 禁用shell后,不能远程登录了)
++ `git checkout -b work`
+> 新建分支work
++ `git push --set-upstream origin work`
++ `git push`
++ `git checkout -b work origin/work`
+> 运行 git fetch，可以将远程分支信息获取到本地，再运行 git checkout -b local-branchname origin/remote_branchname  就可以将远程分支映射到本地命名为local-branchname  的一分支。 
+> OK!
+
+## at jhk:
+> To git@mydomain.freedynamicdns.org:/home/git/one.git
  ! [rejected]        work -> work (fetch first)
 error: failed to push some refs to 'git@abpage.freedynamicdns.org:/home/git/one.git'
 解决：
-# git fetch origin work
+
+`git fetch origin work`
 
 
-at jhk:
- 2016/10/18 13:35 
+## at jhk:
 $ git init
 $ git remote add origin git@abpage.freedynamicdns.org:/home/git/one.git
 $ vim test.c
