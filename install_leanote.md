@@ -4,7 +4,7 @@
 + `mv leanote.tar.gz ~/`
 + `tar -zxvf leanote.tar.gz`
 
-##安装mongodb:
+## 安装mongodb:
 > https://github.com/fanswm/Linux_install/blob/master/install_mongodb.md
 
 > https://github.com/fanswm/Linux_install/blob/master/install_golang.md
@@ -17,21 +17,23 @@
   + `$>mongorestore -h localhost -d leanote --directoryperdb /home/user1/leanote/mongodb_backup/leanote_install_data/`
 
 > mongodb v3 导入数据命令:
-  `$> mongorestore -h localhost -d leanote --dir /home/user1/leanote/mongodb_backup/leanote_install_data/`
+  + `$> mongorestore -h localhost -d leanote --dir /home/user1/leanote/mongodb_backup/leanote_install_data/`
 
 > 现在在mongodb中已经新建了leanote数据库, 可用命令查看下leanote有多少张"表":
 + `mongo`
 
 > + > 查看数据库
 > `> show dbs`
+
 > leanote 0.203125GB
-local   0.078125GB
+> local   0.078125GB
 
 > + 切换到leanote
 `> use leanote`
 > switched to db leanote
+
 > + 查看表
-> show collections
+`> show collections`
 
 ## 初始数据的users表中已有2个用户:
 + user1 username: admin, password: abc123 (管理员, 只有该用户才有权管理后台, 请及时修改密码)
@@ -39,12 +41,10 @@ local   0.078125GB
 
 > 端口9001
 
-
-
 ## 配置leanote:
 > leanote的配置存储在文件 `conf/app.conf` 中。
-请务必修改`app.secret`一项, 在若干个随机位置处，将字符修改成一个其他的值, 否则会有安全隐患!
-其它的配置可暂时保持不变, 若需要配置数据库信息, 请参照 leanote问题汇总。
+> 请务必修改`app.secret`一项, 在若干个随机位置处，将字符修改成一个其他的值, 否则会有安全隐患!
+> 其它的配置可暂时保持不变, 若需要配置数据库信息, 请参照 leanote问题汇总。
 
 ## 运行leanote:
 > 注意: 在此之前请确保mongodb已在运行!
