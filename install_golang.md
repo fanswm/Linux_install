@@ -13,10 +13,10 @@
 
 ```
 package main
-	import  "fmt" //引入fmt库
-	func main() {
-	    fmt.Println("Hello World!")
-	}
+import  "fmt" //引入fmt库
+func main() {
+	fmt.Println("Hello World!")
+}
 ```
 + `go build hello_go.go`
 + `./hello_go`
