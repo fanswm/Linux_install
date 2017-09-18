@@ -5,9 +5,9 @@
 + `tar -zxvf leanote.tar.gz`
 
 ## 安装mongodb:
-> https://github.com/fanswm/Linux_install/blob/master/install_mongodb.md
+> https://github.com/myusername/Linux_install/blob/master/install_mongodb.md
 
-> https://github.com/fanswm/Linux_install/blob/master/install_golang.md
+> https://github.com/myusername/Linux_install/blob/master/install_golang.md
 
 ## 导入初始数据:
 > leanote初始数据存放在 `/home/user1/leanote/mongodb_backup/leanote_install_data`中。
@@ -50,7 +50,7 @@
 > 注意: 在此之前请确保mongodb已在运行!
 
 + 新开一个窗口, 运行:
-+ `cd /home/fanswm/leanote/bin`
++ `cd /home/myusername/leanote/bin`
 + `chmod u+x ./run.sh`
 + `run.sh`
 
@@ -165,7 +165,7 @@ append:
 ```
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          /home/fanswm/leanote/bin	by:fanswm
+# Provides:          /home/myusername/leanote/bin	by:myusername
 # Required-Start:    $remote_fs $network
 # Required-Stop:     $remote_fs $network
 # Default-Start:     2 3 4 5
@@ -175,15 +175,15 @@ append:
 case "$1" in
 start)
     echo -n "Starting leanote \n"
-    sudo -u fanswm /home/fanswm/leanote/bin/run.sh &
+    sudo -u myusername /home/myusername/leanote/bin/run.sh &
 ;;
 stop)
     echo -n "Shutting down leanote \n"
-    killall /home/fanswm/leanote/bin/leanote-linux-arm
+    killall /home/myusername/leanote/bin/leanote-linux-arm
 ;;
 restart)
-    killall /home/fanswm/leanote/bin/leanote-linux-arm
-    sudo -u fanswm /home/fanswm/leanote/bin/run.sh &
+    killall /home/myusername/leanote/bin/leanote-linux-arm
+    sudo -u myusername /home/myusername/leanote/bin/run.sh &
 esac
 exit
 ```
