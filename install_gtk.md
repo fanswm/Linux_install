@@ -24,4 +24,4 @@ int main(int argc,char *argv[])
 ```
 
 ## 编译:
-+ `gcc hello_gtk.c -o hello_gtk `pkg-config --libs --cflags gtk+-2.0``
++ `gcc hello_gtk.c -o hello_gtk ``pkg-config --libs --cflags gtk+-2.0``
