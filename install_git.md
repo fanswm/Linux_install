@@ -10,7 +10,8 @@
 
 # 原始安装
 
-## 密钥位置： `C:\users\administrator\.ssh\id_rsa`
+## 密钥位置： 
++ `C:\users\administrator\.ssh\id_rsa`
 
 ## 在(home)win10中:
 + 打开git_shell
