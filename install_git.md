@@ -112,3 +112,10 @@ git config 删除一个变量：
 $ git config --global --unset 项目
 如：
 $ git config --global --unset user.name
+
+
+## anzhu anzhuang git
++ `sudo apt-get install git`
+> 建议安装的软件包：
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
