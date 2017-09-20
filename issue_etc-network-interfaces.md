@@ -1,4 +1,6 @@
-## etc/network/interfaces
+## /etc/network/interfaces
+> edit:
+
 ```
 auto lo
 iface lo inet loopback
