@@ -26,14 +26,14 @@
 
 ## 安装ipython, notebook
 + 安装：
-+ + `sudo pip install ipython`
-+ + `sudo pip install notebook`
-+ + `sudo apt-get install ipython-notebook`
+  + `sudo pip install ipython`
+  + `sudo pip install notebook`
+  + `sudo apt-get install ipython-notebook`
 + 打开：
-+ + `ipython notebook`
+  + `ipython notebook`
 
 ## 安装jupyter notebook
 + `sudo pip install jupyter`
 + 运行：
-+ + `jupyter notebook`
+  + `jupyter notebook`
 > Shift+Enter 执行
