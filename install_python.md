@@ -18,6 +18,7 @@
 
 > 2017/06/24 17:04 
 > 下载pip-9.0.1-py2.py3-none-any.whl
+
 > `pip install pip-9.0.1-py2.py3-none-any.whl`
 
 ##安装easy_install:
@@ -25,14 +26,14 @@
 
 ## 安装ipython, notebook
 + 安装：
-`sudo pip install ipython`
-`sudo pip install notebook`
-`sudo apt-get install ipython-notebook`
++ + `sudo pip install ipython`
++ + `sudo pip install notebook`
++ + `sudo apt-get install ipython-notebook`
 + 打开：
-`ipython notebook`
++ + `ipython notebook`
 
 ## 安装jupyter notebook
 + `sudo pip install jupyter`
 + 运行：
-`jupyter notebook`
++ + `jupyter notebook`
 > Shift+Enter 执行
