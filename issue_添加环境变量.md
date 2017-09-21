@@ -1,5 +1,5 @@
 + `vim ~/.bashrc`
 > append:
-> `PATH=$PATH:/home/fanswm/anaconda2/bin`
+> `PATH=$PATH:/home/myusername/anaconda2/bin`
 
 + `source ~/.bashrc`
