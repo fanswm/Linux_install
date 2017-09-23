@@ -66,6 +66,27 @@ hexo d
 
 https://hexo.io/docs/configuration.html
 
+
+
+## 主题
+
++ install:
+> 例如： next
+```
+git clone --branch v5.1.2 https://github.com/iissnan/hexo-theme-next themes/next
+https://github.com/iissnan/hexo-theme-next
+
+git checkout master
+```
++ update:
+```
+cd themes/next
+git pull
+```
++ vim _config.yml
+```
+theme: next
+```
 > 以上在简书的
 
 
