@@ -1,3 +1,73 @@
+## install Node.js git
+
++ install Node.js
+	+ install nvm
+	> `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash`
+	+ `nvm install stable`
++ install Git
+`sudo apt-get install git`
+
+## Install Hexo
+```
+npm install -g hexo-cli
+npm install hexo-deployer-git --save
+```
+
+## use Hexo
+
++ init
+```
+hexo init <folder>
+cd <folder>
+npm install
+```
+
++ new
+`hexo new [layout] <title>`
+
++ generate
+`hexo generate`
+
++ deploy
+`hexo deploy`
+
+## use github.username.io
+
++ 创建仓库username.github.io
+	+ 登录`github.com`
+	+ 创建仓库`username.github.io`
+	> `username`是你的用户名，必须按此格式创建仓库
+
++ 在本机config git
+```
+git config -l
+git config user.name myusername@126.com
+git config user.email myusername@126.com
+git remote add origin https://github.com/myusername/myusername.github.io.git
+```
+
++ `vim ./_config.yml`
+```
+lang: zh-CN
+type: git 
+repo: https://github.com/myusername/myusername.github.io.git 
+branch: master
+```
+
++ deploy to github.io
+```
+hexo g
+hexo s
+hexo d
+# input username
+# input password for username
+``` 
+
+https://hexo.io/docs/configuration.html
+
+> 以上在简书的
+
+
 # install hexo
 
 > https://myusername.github.io/2017/09/11/windows-issue/
