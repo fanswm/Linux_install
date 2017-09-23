@@ -4,6 +4,7 @@
 	+ install nvm
 	> `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash`
 	+ `nvm install stable`
+	+ `nvm --version`
 + install Git
 `sudo apt-get install git`
 
