@@ -32,3 +32,28 @@ libwebkitgtk-1.0-0 已经是最新的版本。
 解压缩后会消耗掉 64.6 MB 的额外空间。
 您希望继续执行吗？ [Y/n] y
 
+
+## 启动失败：
+> !SESSION 2017-10-02 19:39:04.343 -----------------------------------------------
+eclipse.buildId=R3.7.4.201709062120
+java.version=9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Framework arguments:  -eclipse.keyring @user.home/.xmind/secure_storage_linux
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data ../workspace -eclipse.keyring @user.home/.xmind/secure_storage_linux
+
+!ENTRY org.eclipse.osgi 4 0 2017-10-02 19:39:05.536
+!MESSAGE Application error
+!STACK 1
+java.lang.IllegalStateException: Unable to acquire application service. Ensure that the org.eclipse.core.runtime bundle is resolved and started (see config.ini).
+        at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:78)
+        at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+        at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+        at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+        at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+        at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+        at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
