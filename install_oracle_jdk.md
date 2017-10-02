@@ -80,3 +80,6 @@ public class HelloWorld {
 + `update-alternatives --set javac /usr/lib/jvm/bin/javac`
 + `java --version`
 > 再测试.
+
+
+[1]: http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html "jdk download"
