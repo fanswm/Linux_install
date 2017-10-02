@@ -64,3 +64,19 @@ public class HelloWorld {
 
 ## 运行
 + `java HelloWorld`   
+
+
+# 如果之前没有安装java或openjdk：
++ 下载[jdk-9_linux-x64_bin.tar.gz][1]
++ `tar -zxvf jdk-9_linux-x64_bin.tar.gz`
++ `sudo su`
++ `mv jdk-9 /usr/lib/jvm`
++ `cd /usr/lib/jvm`
++ `update-alternatives --install /usr/bin/java java /usr/lib/jvm/bin/java 1`
++ `update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/bin/javac 1`
++ `ln -s /usr/bin/javac /usr/lib/jvm/javac`
+> 不知有没有用
++ `update-alternatives --set java /usr/lib/jvm/bin/java`
++ `update-alternatives --set javac /usr/lib/jvm/bin/javac`
++ `java --version`
+> 再测试.
