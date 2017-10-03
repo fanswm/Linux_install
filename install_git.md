@@ -1,9 +1,12 @@
+# 安装git
++ `sudo apt-get install git`
+
 # 直接clone服务器:
 
-+ `git clone git@[myip]:/home/git/one.git`
++ `git clone git_user@[myip]:/home/git_user/repo_name.git`
 > input passwd
 + `cd one`
-+ `git checkout -b work`
++ `git checkout -b work_branch`
 + `git branch --set-upstream-to=origin/work work`
 + `git pull`
 > input passwd
