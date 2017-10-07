@@ -62,3 +62,21 @@ systemctl disable whoopsie.service
 systemctl mask whoopsie.service
 
 ```
+
+## 重演你的系统启动的所有消息
++ `journalctl -b`
+  + 复审前一次启动
+  > ` journalctl -b -1`
+  + 复审倒数第 2 次启动
+  > ` journalctl -b -2`
+  > 类推
+  
++ 过滤器
+> 我们以进程号为 1 的进程为例，该进程是所有其它进程的父进程.
+  + `journalctl _PID=1`
+  > 这些打印消息显示了什么被启动，或者是正在尝试启动。
+  
++ 查看哪个服务进程启动耗时最长
+  + `systemd-analyze blame`
+  
+  
