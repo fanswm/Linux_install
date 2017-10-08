@@ -48,9 +48,9 @@ systemctl disable avahi-daemon.service
 systemctl mask avahi-daemon.service
 
 # bluetooth.service
-systemctl stop accounts-daemon.service
-systemctl disable accounts-daemon.service
-systemctl mask accounts-daemon.service
+systemctl stop bluetooth.service
+systemctl disable bluetooth.service
+systemctl mask bluetooth.service
 
 # ModemManager.service
 systemctl stop ModemManager.service
