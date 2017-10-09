@@ -2,10 +2,10 @@
 > 下载: http://www.vim.org/scripts/script.php?script_id=2332
 
 ```
-$ mkdir -p ~/.vim/autoload ~/.vim/bundle
-$ cd ~/.vim/bundle
-$ git clone https://github.com/tpope/vim-sensible.git
-$ vim ~/.vimrc
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+cd ~/.vim/bundle
+git clone https://github.com/tpope/vim-sensible.git
+vim ~/.vimrc
 ```
 > add:
 ```
