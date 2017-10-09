@@ -1,61 +1,68 @@
-my vim: fanswm
- 2016/10/22 09:43 
-at jhk/git bash/$HOME
++ 安装pathogen.vim
+> 下载: http://www.vim.org/scripts/script.php?script_id=2332
 
-安装pathogen.vim
-下载:http://www.vim.org/scripts/script.php?script_id=2332
-
+```
 $ mkdir -p ~/.vim/autoload ~/.vim/bundle
 $ cd ~/.vim/bundle
 $ git clone https://github.com/tpope/vim-sensible.git
 $ vim ~/.vimrc
-add:
+```
+> add:
+```
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-以后，你安装你的插件可以直接安装到   ~/.vim/bunle/   目录下。
+```
 
-安装supertab:
-下载：https://github.com/ervandew/supertab
+> 以后，你安装你的插件可以直接安装到   ~/.vim/bunle/   目录下。
+
++ 安装supertab:
+> 下载：https://github.com/ervandew/supertab
 http://www.vim.org/scripts/script.php?script_id=1643
 supertab.vmb
 复制到 ~/.vim/bunle/
+```
 $ vim ./supertab.vmb
 :source %
-ok!
+```
 
-安装Syntastic:
-下载:http://www.vim.org/scripts/script.php?script_id=2736
++ 安装Syntastic:
+> 下载:http://www.vim.org/scripts/script.php?script_id=2736
 https://github.com/scrooloose/syntastic
 If using pathogen:
+```
 cd ~/.vim/bundle
 git clone https://github.com/scrooloose/syntastic.git
+```
 
 Otherwise:
 Extract the zip file into your ~/.vim or $HOME\vimfiles (windows), open up vim, run helptags and then checkout :help syntastic.
 
-$ vim
+```
+vim
 : helpstags ~/.vim/bunle/syntastic/doc
 : help syntastic.txt
 : help syntastic-checkers.txt
+```
 
-安装Auto Pairs:(自动括号)
-下载:http://www.vim.org/scripts/script.php?script_id=3599
++ 安装Auto Pairs:(自动括号)
+> 下载:http://www.vim.org/scripts/script.php?script_id=3599
 https://github.com/jiangmiao/auto-pairs
 if you are using `pathogen`:
 
 ```git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs```
 
-安装NERD Commenter
++ 安装NERD Commenter
 
-安装Snipmate
-http://www.vim.org/scripts/script.php?script_id=2540
++ 安装Snipmate
+> http://www.vim.org/scripts/script.php?script_id=2540
 https://github.com/garbas/vim-snipmate
 
 
-以下是树莓派的安装：
-vi ~/.vimrc  
-设置语法高亮：
++ 以下是树莓派的安装：
+`vi ~/.vimrc  `
+> 设置语法高亮：
+```
 set nocompatible    "关闭与VI的兼容  
 set number
 filetype on
@@ -77,18 +84,20 @@ else
 set backup
 endif
 colorscheme desert
+```
 
-201605011021:
-安装taglist:
-先安装ctags
-下载ctags-5.8.tar.gz;
-$ tar -zxvf ctags-5.8.tar.gz
-$ ./configure
-$ make
-$ make install
++ 安装taglist:
+> 先安装ctags
+> 下载ctags-5.8.tar.gz;
+```
+tar -zxvf ctags-5.8.tar.gz
+./configure
+make
+make install
+```
 
-安装a.vim;
++ 安装a.vim;
 
-安装插件：
-直接在.vimrc中加上Plugin 'plasticboy/vim-markdown'，之后在vim中执行:BundleInstall即可。
++ 安装插件：
+> 直接在.vimrc中加上Plugin 'plasticboy/vim-markdown'，之后在vim中执行:BundleInstall即可。
 
