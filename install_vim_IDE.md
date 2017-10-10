@@ -1,3 +1,5 @@
+http://blog.csdn.net/namecyf/article/details/7787479
+
 > 文中用到的一些用<>括起来的符号比如<C-T>, <C-S-A>, 之类的, 你可以用下面的命令看看解释:
 `:help keycodes`
 
