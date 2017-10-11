@@ -90,6 +90,27 @@ hi cLogicalOperatorError    guifg=#3EFFE2
 > 但是，你增加了函数定义，变量等，必须手动运行`ctags -R`
 
 ## 教你高效地浏览源码 -- 插件: TagList
++ 下载 [taglist__xx.zip][1]
++ 在～/.vim/目录解压
+
++ 首先请先在你的~/.vimrc文件中添加下面两句:
+```
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1```
+
++ 使用：
+> 进入vim后用下面的命令打开taglist窗口,`:Tlist`
+
++ 查看帮助：`:help taglist.txt`
+
+## 文件浏览器和窗口管理器 -- 插件: WinManager
++ 下载 [winmanager.zip][2]
++ 帮助`	:help winmanager`
++ 
+
+
+[1]: http://www.vim.org/scripts/script.php?script_id=273 "taglist"
+[2]: http://www.vim.org/scripts/script.php?script_id=95 "winmanager"
 
 
 
