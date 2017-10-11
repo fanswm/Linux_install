@@ -37,4 +37,59 @@ http://blog.csdn.net/namecyf/article/details/7787479
 > colorscheme desert
 > 创建自己的颜色主题：`:help syntax.txt`
 
+## 自定义语法高亮
++ `vim ~/.vim/syntax/c.vim`
+> add:
+> 
+```
+"========================================================
+" Highlight All Function
+"========================================================
+syn match   cFunction "/<[a-zA-Z_][a-zA-Z_0-9]*/>[^()]*)("me=e-2
+syn match   cFunction "/<[a-zA-Z_][a-zA-Z_0-9]*/>/s*("me=e-1
+hi cFunction        gui=NONE guifg=#B5A1FF
+
+"========================================================
+" Highlight All Math Operator
+"========================================================
+" C math operators
+syn match       cMathOperator     display "[-+/*/%=]"
+" C pointer operators
+syn match       cPointerOperator  display "->/|/."
+" C logical   operators - boolean results
+syn match       cLogicalOperator  display "[!<>]=/="
+syn match       cLogicalOperator  display "=="
+" C bit operators
+syn match       cBinaryOperator   display "/(&/||/|/^/|<</|>>/)=/="
+syn match       cBinaryOperator   display "/~"
+syn match       cBinaryOperatorError display "/~="
+" More C logical operators - highlight in preference to binary
+syn match       cLogicalOperator  display "&&/|||"
+syn match       cLogicalOperatorError display "/(&&/|||/)="
+
+" Math Operator
+hi cMathOperator            guifg=#3EFFE2
+hi cPointerOperator         guifg=#3EFFE2
+hi cLogicalOperator         guifg=#3EFFE2
+hi cBinaryOperator          guifg=#3EFFE2
+hi cBinaryOperatorError     guifg=#3EFFE2
+hi cLogicalOperator         guifg=#3EFFE2
+hi cLogicalOperatorError    guifg=#3EFFE2
+```
+
+## 在程序中跳来跳去: Ctags 的使用
++ `sudo apt-get install exuberant-ctags`
++ 去源码目录：`cd one.git`
+> one.git是我的源码目录
++ ctags -R
+> 此时在/home/wooin/vim71目录下会生成一个 tags 文件
++ 再在vim中运行命令:`:set tags=/home/fanswm/one/tags`
+> 用法：
+> 把光标放在函数名称上
+> 按下: ctrl + ]就跳到定义处，按ctrl+T跳回使用处。
+> 但是，你增加了函数定义，变量等，必须手动运行`ctags -R`
+
+## 教你高效地浏览源码 -- 插件: TagList
+
+
 
