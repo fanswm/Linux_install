@@ -1,5 +1,5 @@
 ## 修改用户名
-+ ```
+```
 usrmod -l newname -d /home/oldname -m oldname
 # -l 新的登录名称
 # -d 新用户的主目录
@@ -7,7 +7,7 @@ usrmod -l newname -d /home/oldname -m oldname
 groupmod -n newname oldname
 # -n 修改新组名
 ```
-+ 重启电脑
+重启电脑
 
 ```
 /etc/passwd
