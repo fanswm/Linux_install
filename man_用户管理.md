@@ -1,0 +1,33 @@
+## 修改用户名
++ ```
+usrmod -l newname -d /home/oldname -m oldname
+# -l 新的登录名称
+# -d 新用户的主目录
+# -m 将家目录内容移至新位置(仅与-d一起使用)
+groupmod -n newname oldname
+# -n 修改新组名
+```
++ 重启电脑
+
+```
+/etc/passwd
+/etc/shadow
+/etc/group
+```
+
+## 添加用户:
+```
+useradd newname
+# 显示newname用户的ID,组ID,所属组等
+id newname
+```
+
+## 删除用户
+```
+userdel -r oldname
+```
+
+## 帮助
+```
+usermod --help
+```
