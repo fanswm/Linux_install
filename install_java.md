@@ -37,17 +37,12 @@
 9. 查看安装情况
     `java -version`
 
->
-ps:可能出现的错误信息：
-
+> ps:可能出现的错误信息：
 　　bash: ./java: cannot execute binary file
-
 　出现这个错误的原因可能是在32位的操作系统上安装了64位的jdk，
 　　1、查看jdk版本和Linux版本位数是否一致。
 　　2、查看你安装的Ubuntu是32位还是64位系统：
-
 sudo uname -m
 　　附：i686    //表示是32位
 　　     x86_64  // 表示是64位
-
 简书链接：http://www.jianshu.com/p/cb3ceb066ea8
