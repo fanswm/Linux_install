@@ -47,6 +47,29 @@
   # 查看建立的目录和文件:
   tree . 
   ```
++ 生成图书
+  + 输出为静态网站
+    `gitbook serve .`
+  + 直接生成静态网站
+    `gitbook build .`
+    > 可以指定输出目录 gitbook build . /home/michael/book_output
++ 输出PDF
+  + `sudo npm install gitbook-pdf -g`
+  + 这个命令会出现错误,需要手动下载及编译phantomjs工具
+    `git clone git://github.com/ariya/phantomjs.git`
+  + 安装编译需要的工具和依赖
+    ```
+    sudo apt-get install ruby bison flex gperf m4 python 
+    sudo apt-get install libbison-dev libfl-dev libruby1.9.1 libyaml-0-2 
+    sudo apt-get install libssl-dev libpng-dev libjpeg-dev 
+    sudo apt-get install libicu-dev libx11-dev libxext-dev 
+    sudo apt-get install libfontconfig1-dev libfreetype6 libsqlite3-dev 
+    sudo apt-get install libasound2-dev 
+    sudo apt-get install libwayland-dev
+    ```
+  + 最后，安装生成PDF依赖库
+    `sudo apt-get install calibre`
+  + 使用命令gitbook pdf .生成pdf文档，此时会出现更新步骤
 
 
 ```
