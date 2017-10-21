@@ -17,21 +17,21 @@
 
 ## dpkg
 > package manager for Debian
-显示DEB包信息	dpkg -I xx.deb
-显示DEB包文件列表	dpkg -c xx.deb
-安装DEB包	dpkg -i xx.deb
-安装DEB包（指定根目录）	dpkg --root=<directory> -i xx.deb
-显示所有已安装软件	dpkg -l
-显示已安装包信息	dpkg -s foo
-显示已安装包文件列表	dpkg -L foo
-卸载包	dpkg -r foo
-卸载软件包并删除其配置文件	dpkg -P foo
-重新配置已安装程序	dpkg-reconfigure foo
++ 显示DEB包信息	`dpkg -I xx.deb`
++ 显示DEB包文件列表	`dpkg -c xx.deb`
++ 安装DEB包	`dpkg -i xx.deb`
++ 安装DEB包（指定根目录）	`dpkg --root=<directory> -i xx.deb`
++ 显示所有已安装软件	`dpkg -l`
++ 显示已安装包信息	`dpkg -s foo`
++ 显示已安装包文件列表	`dpkg -L foo`
++ 卸载包	`dpkg -r foo`
++ 卸载软件包并删除其配置文件	`dpkg -P foo`
++ 重新配置已安装程序	`dpkg-reconfigure foo`
 
 ## 从软件源中编译软件流程
 
 > 适用于少量代码改动或者配置修改
-## 功能	具体语句	示例
+### 功能	具体语句	示例
 + 获取源码	`apt-get source foo`
 	> `apt-get source rox-filer`
 + 安装编译依赖	`apt-get build-dep foo`	
