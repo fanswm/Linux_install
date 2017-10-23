@@ -46,3 +46,13 @@ sudo uname -m
 　　附：i686    //表示是32位
 　　     x86_64  // 表示是64位
 简书链接：http://www.jianshu.com/p/cb3ceb066ea8
+
+20171023:
+## 安装前：
+java -version
+openjdk version "1.8.0_151"
+OpenJDK Runtime Environment (build 1.8.0_151-b12)
+OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+
+## 安装后：
+
