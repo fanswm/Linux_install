@@ -55,4 +55,7 @@ OpenJDK Runtime Environment (build 1.8.0_151-b12)
 OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
 
 ## 安装后：
+> fanswm:
+`alias java='/usr/jdk/bin/java'
+`
 
