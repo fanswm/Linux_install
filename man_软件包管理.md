@@ -41,3 +41,4 @@
 + 修改源码部分	　	`nano ROX-Filer/src/main.c`
 + 创建包	`dpkg-buildpackage -rfakeroot -b`	　
 + 修改软件可升级状态	`echo -e "foo hold" | dpkg --set-selections`
+> edit by ubuntu
