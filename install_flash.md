@@ -10,6 +10,8 @@
 + `sudo su`
 + `cp ./libflashplayer.so /usr/lib/mozilla/plugins/`
 
-ok!
+### at CentOS
++　[官网][https://get.adobe.com/cn/flashplayer/]下载: flash-player-npapi-27.0.0.183-release.x86_64.rpm
++  `sudo rpm -ivh flash-player-npapi-27.0.0.183-release.x86_64.rpm`
 
 
