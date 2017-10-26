@@ -1,4 +1,4 @@
-## 配置网络： 
+## at Ubuntu： 
 + `vim /etc/network/interfaces`
 
 ```
@@ -16,4 +16,48 @@ dns-nameservers 8.8.8.8
 + ` vim /etc/resolv.conf`
 ```
 nameserver 8.8.8.8
+```
+
+## at CentOS
+
++ 编辑以下文件
+```
+vim /etc/sysconfig/network-scripts/ifcfg-eth0
+```
+```
+BOOTPROTO=static
+ONBOOT=yes
+IPADDR=192.168.0.6
+NETMASK=255.255.255.0
+GATEWAY=192.168.0.1
+DNS1=192.168.0.1
+DNS2=8.8.8.8
+IPV6INIT=no
+```
++ 然后执行
+
+```
+service ip6tables stop #停止ipv6服务
+chkconfig ip6tables off #禁止ipv6开机启动
+service network restart #重启网络连接
+ifconfig #查看ip地址
+```
+
++ 以下是在虚拟机中安装时的该文件
+```
+# 以下是虚拟机安装centosmini时的/etc/sysconfig/network-scripts/ifcfg-eth0文件：
+DEVICE=eth0
+TYPE=Ethernet
+UUID=7fea7cf6-a7bc-4c84-aced-43d8bbb0d97e
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=none
+HWADDR=00:0C:29:F9:F9:49
+IPADDR=192.168.0.6
+GATEWAY=192.168.0.1
+DNS1=192.168.0.1
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=yes
+IPV4INIT=no
+NAME="System eth0"
 ```
