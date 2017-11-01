@@ -2,3 +2,13 @@
 20171101
 
 + sudo vim /etc/yum.repos.d/
+
+[virtualbox]
+name=Oracle Linux / RHEL / CentOS-$releasever / $basearch - VirtualBox
+baseurl=http://download.virtualbox.org/virtualbox/rpm/el/$releasever/$basearch
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://www.virtualbox.org/download/oracle_vbox.asc
+
+
